@@ -25,8 +25,8 @@ spec:
             - containerPort: 80
           env:
             # The app expects this env var for Redis hostname
-            - name: GET_HOSTS_FROM
-              value: "dns"
+            - name: Redis_Host
+              value: "redis"
             # If your image expects REDIS_HOST instead, uncomment:
             # - name: REDIS_HOST
             #   value: "redis"
