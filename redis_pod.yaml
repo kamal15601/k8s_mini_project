@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-pod
+  labels:
+    name: redis-pod
+spec:
+  containers:
+    - name: redis-pod
+      image: redis:7.2-alpine
+      ports:
+        - containerPort: 6379
