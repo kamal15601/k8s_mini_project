@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: guestbook-frontend
-          image: public.ecr.aws/google-samples/gb-frontend:v4
+          image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
           ports:
             - containerPort: 80
           env:
